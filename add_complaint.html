@@ -1,0 +1,145 @@
+<!-- <html>
+<form name="regform" action="/addcomplaint" method="POST">
+Title      : <input type="text" name="title">
+Description: <input type="text" name="description">
+<button type="submit" id="submitbutton">Submit</button>
+</form>
+</html> -->
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Add Complaint</title>
+	
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="responsive.css">
+	</head>
+	<body>
+		<div>
+				<header class="header">
+						<section class="header-top">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-8 col-sm-8 col-xs-12">
+										<div class="contact">
+											<p><span class="phone"><a href="#">Phone: +1023546789</a></span><span class="email"><a href="#">Email: testdomain@gmail.com</a></span></p>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-4">
+										<div class="join-us">
+											<p><a href="#">REGISTER</a></p>
+											<p><a href="#">LOGIN</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="header-bottom">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-5 col-sm-12 col-xs-12">
+										<a href="#">
+											<div class="main-logo">
+												<img src="img/main-logo.png" alt="">
+												<h2>COMPALINT MANAGEMENT SYSTEM</h2>
+											</div>
+										</a>
+									</div>
+									<div class="col-md-7 col-sm-12 col-xs-12">
+										<div class="menu">
+										 	<ul class="nav navbar-nav">
+												<li class="active"><a href="#">HOME</a></li>
+												<li><a href="#">ABOUT US</a></li>
+												<li><a href="#">ADD COMPLAINT</a></li>
+												<li><a href="#">VIEW STATUS</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</header>
+		</div>
+		<div style="height:300px">
+				<form  method="POST" action="/addcomplaint">
+						<h1 style="margin-left: 20px;">ADD COMPLAINT</h1><br>
+						<div style="margin-left:30%; background-color: rgb(94, 230, 94); width: 550px; height: 250px">	
+							<label style="margin:10px;">Title: </label>
+							<input type="text" style="margin-left: 45px; width: 75%" name="title">
+							<br>
+							<label style="margin:10px; display: inline-table;">Description: </label>
+							<textarea rows="6" cols="20" style="display:inline-table" name="description"></textarea>
+							<br>
+							<br>
+							<button type="submit" id="submit" style="margin-left:20px; background-color: green; color: white">SUBMIT</button>
+						</div>	
+		
+				</form>
+		</div>
+		
+		<div>
+				<footer class="footer">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-4 col-sm-12">
+									<div class="footer-charity-text">
+										<h2>On Demand Soluions</h2>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+										<hr>
+										<p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></p>
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div class="row">
+										<div class="col-md-4 col-sm-5">
+											<div class="footer-text one">
+												<h3>RECENT POST</h3>
+												<ul>
+													<li><a href="#"><i class="material-icons">keyboard_arrow_right</i> Consectetur Adipisicing Elit</a></li>
+													<li><a href="#"><i class="material-icons">keyboard_arrow_right</i> Consectetur Adipisicing </a></li>
+													<li><a href="#"><i class="material-icons">keyboard_arrow_right</i> Consectetur Adipisicing Elit</a></li>
+													<li><a href="#"><i class="material-icons">keyboard_arrow_right</i> Consectetur Adipisicing</a></li>
+													<li><a href="#"><i class="material-icons">keyboard_arrow_right</i> Consectetur Adipisicing Elit</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-3">
+											<div class="footer-text two">
+												<h3>USEFUL LINKS</h3>
+												<ul>
+													<li><a href="#">Home</a></li>
+													<li><a href="#">About Us</a></li>
+													<li><a href="#">Add Compalint</a></li>
+													<li><a href="#">View Status</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-4">
+											<div class="footer-text one">
+												<h3>CONTACT US</h3>
+												<ul>
+													<li><a href="#"><i class="material-icons">location_on</i>1 Street, derby, FL 2147, USA</a></li>
+													<li><a href="#"><i class="material-icons">email</i>complaintmanagement@gmail.com</a></li>
+													<li><a href="#"><i class="material-icons">call</i>+123456789</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="footer_bottom">
+							<p>Copyright @ 2017 <a href="#">Batch C</a> | All Rights Reserved </p>
+						</div>
+					</footer>
+		</div>
+	</body>
+</html>
